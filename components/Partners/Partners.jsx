@@ -3,6 +3,9 @@ import styles from './Partners.module.sass'
 
 function Partners() {
   return (
+<<<<<<< HEAD
+    <div></div>
+=======
     <div className={styles.container}>
       <div className={styles.back}>
         <h3 className={styles.partnerName}>Наш партнёр</h3>
@@ -20,6 +23,7 @@ function Partners() {
         </div>
       </div>
     </div>
+>>>>>>> 28b69d89b7da519a155a9c1609f8b58e7bb260f6
   )
 }
 

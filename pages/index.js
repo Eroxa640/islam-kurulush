@@ -1,7 +1,10 @@
 import Head from "next/head";
+import Services from "../components/Cards/Services";
+import Reviews from "../components/Reviews/Reviews";
 import About from "../components/About/About";
 import Partners from "../components/Partners/Partners";
 import styles from "../styles/Home.module.sass";
+import Call from "../components/Call/Call";
 import MainHead from "../components/MainHead/MainHead";
 
 export default function Home() {
@@ -15,6 +18,9 @@ export default function Home() {
       <MainHead />
       <About />
       <Partners />
+      <Reviews />
+      <Call />
+      <Services />
     </div>
   );
 }
