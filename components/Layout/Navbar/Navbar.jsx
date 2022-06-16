@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.sass";
+// import Image from "next/image";
+// import second from "first";
 import Image from "next/image";
 import Logo from "./mainLogo.png";
 import nav from "../../../data/nav";
