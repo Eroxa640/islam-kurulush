@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Services from "../components/Cards/Services";
+import About from "../components/About/About";
+import Partners from "../components/Partners/Partners";
 import styles from "../styles/Home.module.sass";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Services/>
+      <About/>
+      <Partners/>
     </div>
   );
 }
