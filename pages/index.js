@@ -13,8 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHead />
-      {/* <About/> */}
-      {/* <Partners/> */}
+      <About />
+      <Partners />
     </div>
   );
 }
