@@ -1,6 +1,6 @@
 const contact = [
   {
-    title: "996 (700) 556 030",
+    title: "+996 (700) 556 030",
     link: "phone.png",
     id: 1,
   },
