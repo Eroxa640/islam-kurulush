@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.sass";
-import Image from "next/image";
-import second from "first";
+// import Image from "next/image";
+// import second from "first";
 
 export default function Navbar() {
   return (
