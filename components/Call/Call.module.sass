@@ -25,6 +25,7 @@
 
 .call_desc
   display: flex
+  justify-content: center
 
 .call_left h2
   font-family: 'Merriweather'
@@ -158,3 +159,43 @@
 .image
   width: 100%
   height: 100%
+
+@media screen and (max-width: 1000px)
+  .left_desc
+    display: grid
+    justify-content: center
+  .call_email
+    margin: 0 auto
+    margin-top: 20px
+
+@media screen and (max-width: 900px)
+  .call_desc
+    display: grid
+  .call_bg
+    height: 847px
+  .left_desc
+    display: flex
+  .call_email
+    margin: 0 auto
+  .call_right
+    margin: 0
+    margin-top: 45px
+  .first_input
+    width: 100%
+@media screen and (max-width: 500px)
+  .left_desc
+    display: grid
+    justify-content: center
+  .call_email
+    margin: 0 auto
+    margin-top: 20px
+  .top_input
+    display: grid
+  .second_input
+    margin: 0
+  .bottom_input
+    margin: 0
+  .summit
+    float: none
+  .call_left h2
+    font-size: 30px
