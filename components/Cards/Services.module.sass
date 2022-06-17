@@ -28,8 +28,8 @@
     margin-left: 130px
 
 .img__service
-    width: 350px
-    height: 365px 
+    max-width: 350px
+    max-height: 365px 
     
     
 .card
@@ -57,6 +57,8 @@
   gap: 30px
   padding-left: 130px
   padding-bottom: 100px
+  display: grid
+  grid-template-columns: repeat(auto-fit,minmax(350px,max(1fr)))
 
 @media screen and (min-width:1920px)
   .container
@@ -114,22 +116,38 @@
 
 
 
-@media screen and (max-width:769px)
-  .img__srv
-    display: none
-
-  .h2__srv
-    display: none
+@media screen and (max-width:562px)
+  .card
+    margin-left: -90px
 
   .h1__service
-    font-size: 48px
-    margin-left: 75px
+    font-size: 34px
 
-  .h5__service    
-    margin-left: 75px
+    
 
-  .img__service
-    margin-left: 66px
 
-  .h2__service
-    left: 66px
+@media screen and (max-width:769px)
+    .img__srv
+      display: none
+
+    .h2__srv
+      display: none
+
+    .h1__service
+      font-size: 48px
+      margin-left: 75px
+
+    .h5__service    
+      margin-left: 75px
+
+    .img__service
+      margin-left: 66px
+
+    .h2__service
+      left: 66px
+
+    
+
+
+
+
