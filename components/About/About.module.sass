@@ -16,11 +16,12 @@
   font-size: 24px
   font-family: "Montserrat", sans-serif
   color: #BDBDBD
+.block
+  padding-top: 40px
 .companyNameOne 
   font-size: 48px
   font-family: "Merriweather", sans-serif
   color: #333333
-  padding-top: 40px
 .companyName
   font-size: 48px
   font-family: "Merriweather", sans-serif
@@ -47,6 +48,16 @@
   height: 255px
   padding: 40px
   background-color: #EBEBEB
+  transition: .5s
+  &:hover
+    background-color: #0C4083
+    transform: translate(3px, 5px)
+    .deals__number
+      color: #f1f1f1
+    .deals__title
+      color: #f1f1f1
+    .deals__case
+      color: #f1f1f1
 .deals
   max-width: 550px
   display: grid
@@ -57,12 +68,14 @@
   color: #000000
   font-family: 'Montserrat', sans-serif
   font-weight: black
+  transition: .4s
 .deals__title
   font-size: 14px
   color: #000000
   font-family: 'Montserrat', sans-serif
   font-weight: black
   padding-top: 30px
+  transition: .4s
 .deals__case
   font-size: 14px
   color: #005FA3
@@ -71,34 +84,9 @@
   text-decoration: underline
   padding-top: 47px
   cursor: pointer
+  transition: .4s
   &:hover
     text-decoration: none
-.deals__number2
-  font-size: 55px
-  color: #f1f1f1
-  font-family: 'Montserrat', sans-serif
-  font-weight: black
-.deals__title2
-  font-size: 14px
-  color: #f1f1f1
-  font-family: 'Montserrat', sans-serif
-  font-weight: black
-  padding-top: 30px
-.deals__case2
-  font-size: 14px
-  color: #f1f1f1
-  font-family: 'Montserrat', sans-serif
-  font-weight: bold
-  text-decoration: underline
-  padding-top: 47px
-  cursor: pointer
-  &:hover
-    text-decoration: none
-.deal2
-  max-width: 255px
-  height: 255px
-  padding: 40px
-  background-color: #005FA3
 
 @media screen and (max-width: 1130px) 
   .container 
@@ -113,4 +101,34 @@
   .deals
     margin: 50px auto
   .container
-    padding: 50px 0 50px 0
+    padding: 40px 0 30px 0
+@media screen and (max-width: 634px)
+  .deals
+    grid-template-columns: repeat(1, 4fr)
+    margin: 20px auto
+  .companyNameOne
+    font-size: 28px
+  .companyName
+    font-size: 28px
+    padding-left: 10px
+  .block
+    display: flex
+    align-items: center
+  .top
+    padding-top: 30px
+@media screen and (max-width: 515px)
+  .block
+    display: block
+  .companyName
+    padding-left: 0
+  .container
+    max-width: calc( 100% - 50px )
+@media screen and (max-width: 400px)
+  .parag
+    font-size: 16px
+    line-height: 22px
+  .parag2
+    font-size: 16px
+    line-height: 22px
+  .block
+    padding-top: 20px

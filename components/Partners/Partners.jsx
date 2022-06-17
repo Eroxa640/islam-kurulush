@@ -9,7 +9,9 @@ function Partners() {
         <div className={styles.flex}>
           <div className={styles.partner}>
             <h1 className={styles.work}>С нами работает</h1>
-            <div className={styles.top}><img src="images/euroasia-logo.png" alt="" /></div>
+            <div className={styles.top}>
+              <img className={styles.euroasia__logo} src="images/euroasia-logo.png" alt="" />
+            </div>
           </div>
           <div className={styles.partner__about}>
             <p className={styles.parag}>Компания "Eurasia Kyrgyzstan" скупкой недвижимости.</p>
