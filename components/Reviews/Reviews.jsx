@@ -7,8 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function Reviews() {
-  const navigationPrevRef = React.useRef(null);
-  const navigationNextRef = React.useRef(null);
   return (
     <div className={styles.reviews}>
       <div className={styles.reviews_container}>
@@ -23,10 +21,6 @@ export default function Reviews() {
             horizontalClass: styles.swiperPaginationHorizontal,
             modifierClass: styles.swiperPagination,
             clickable: true,
-          }}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current,
           }}
           className="slider"
           modules={[Pagination, Navigation]}
