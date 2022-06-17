@@ -38,36 +38,30 @@
 
 .h2__service
     font-family: Monsterat, sans-serif
-    font-size: 24px
+    font-size: 22px
     color: #FFFFFF 
     position: absolute
     top: 260px
     left: 0  
     width: 300px
+    padding-left: 20px
+
+
+
+  
+
 
 .cards
-    display: grid
-    grid-template-columns: repeat(3, 0fr)
-    gap: 30px
-    padding-left: 130px
-    padding-bottom: 200px
+  display: grid
+  grid-template-columns: repeat(3, 0fr)
+  gap: 30px
+  padding-left: 130px
+  padding-bottom: 100px
 
-  
-  
-  
-  
-  
-  
-  
-  
 @media screen and (min-width:1920px)
   .container
     max-height: 4460
-    background: #EBEBEB
-    
-
-
-    
+    background: #EBEBEB    
 
   .h5__service
     font-family: Monsterat, sans-serif
@@ -102,12 +96,13 @@
 
   .h2__service
     font-family: Monsterat, sans-serif
-    font-size: 24px
+    font-size: 22px
     color: #FFFFFF 
     position: absolute
     top: 260px
     left: 0  
     width: 300px
+
 
   .cards
     display: grid
@@ -116,3 +111,25 @@
     padding-left: 130px
     padding-bottom: 200px
     margin-left: 300px
+
+
+
+@media screen and (max-width:769px)
+  .img__srv
+    display: none
+
+  .h2__srv
+    display: none
+
+  .h1__service
+    font-size: 48px
+    margin-left: 75px
+
+  .h5__service    
+    margin-left: 75px
+
+  .img__service
+    margin-left: 66px
+
+  .h2__service
+    left: 66px

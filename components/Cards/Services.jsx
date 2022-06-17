@@ -12,27 +12,27 @@ export default function Services() {
                 <h2 className={styles.h2__service}>Строительстве нового поколения жилых домов</h2>
           </div>
           <div className={styles.card}>
-                <img src="images/img-services.png" alt="" className={styles.img__service} />
-                <h2 className={styles.h2__service}>Строительстве нового поколения жилых домов</h2>
-          </div>
-          <div className={styles.card}>
-                <img src="images/img-services.png" alt="" className={styles.img__service} />
-                <h2 className={styles.h2__service}>Строительстве нового поколения жилых домов</h2>
-          </div>
-          <div className={styles.card}>
-                <img src="images/img-services.png" alt="" className={styles.img__service} />
-                <h2 className={styles.h2__service}>Строительстве нового поколения жилых домов</h2>
-          </div>
-          <div className={styles.card}>
-                <img src="images/img-services.png" alt="" className={styles.img__service} />
-                <h2 className={styles.h2__service}>Строительстве нового поколения жилых домов</h2>
-          </div>
-          <div className={styles.card}>
-                <img src="images/img-services.png" alt="" className={styles.img__service} />
-                <h2 className={styles.h2__service}>Строительстве нового поколения жилых домов</h2>
-          </div>
-          
+                          <img src="images/img-services.png" alt="" className={`${styles.img__service} ${styles.img__srv}`} />
+                          <h2 className={`${styles.h2__service} ${styles.h2__srv}`}>Строительстве нового поколения жилых домов</h2>
+                    </div>
+                    <div className={styles.card}>
+                          <img src="images/img-services.png" alt="" className={`${styles.img__service} ${styles.img__srv}`} />
+                          <h2 className={`${styles.h2__service} ${styles.h2__srv}`}>Строительстве нового поколения жилых домов</h2>
+                    </div>
+                  <div className={styles.card}>
+                            <img src="images/img-services.png" alt="" className={`${styles.img__service} ${styles.img__srv}`} />
+                            <h2 className={`${styles.h2__service} ${styles.h2__srv}`}>Строительстве нового поколения жилых домов</h2>
+                      </div>
+                      <div className={styles.card}>
+                            <img src="images/img-services.png" alt="" className={`${styles.img__service} ${styles.img__srv}`} />
+                            <h2 className={`${styles.h2__service} ${styles.h2__srv}`}>Строительстве нового поколения жилых домов</h2>
+                      </div>
+                  
+                      <div className={styles.card}>
+                            <img src="images/img-services.png" alt="" className={`${styles.img__service} ${styles.img__srv}`}/>
+                            <h2 className={`${styles.h2__service} ${styles.h2__srv}`}>Строительстве нового поколения жилых домов</h2>
+                      </div>         
+              </div>
         </div>
-    </div>
     )
 }
