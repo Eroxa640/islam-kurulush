@@ -17,15 +17,14 @@
   font-family: Merriweather, sans-serif
   color: #333333
   font-weight: 900px
-  font-size: 48px 
+  font-size: 48px
   margin-bottom: 70px
   margin-left: 130px
 
 .img__service
-    max-width: 350px
-    max-height: 365px 
-    
-    
+  max-width: 350px
+  max-height: 365px
+
 .card
   position: relative
   width: 350px
@@ -33,6 +32,7 @@
 
 .card
   position: relative
+  justify-self: center
 
 .h2__service
   font-family: Monsterat, sans-serif
@@ -44,11 +44,12 @@
   width: 300px
 
 .cards
+  width: calc( 100% - 100px )
   display: grid
-  grid-template-columns: repeat(3, 0fr)
+  grid-template-columns: repeat(auto-fit, minmax(350px 1fr))
   gap: 30px
-  justify-content: center
   padding-bottom: 200px
+  margin: 0 auto
 
 @media screen and (min-width:1920px)
   .container
@@ -67,13 +68,12 @@
   display: grid
   grid-template-columns: repeat(3, 0fr)
   gap: 30px
-  padding-left: 130px
+
   padding-bottom: 100px
   display: grid
   grid-template-columns: repeat(auto-fit,minmax(350px,max(1fr)))
 
 // @media screen and (min-width:1920px)
-
 
   .h5__service
     font-family: Monsterat, sans-serif
@@ -122,12 +122,9 @@
   .h1__service
     font-size: 34px
 
-    
-
-
 @media screen and (max-width:769px)
-    .img__srv
-      display: none
+  .img__srv
+    display: none
 
     .h2__srv
       display: none
@@ -136,7 +133,7 @@
       font-size: 48px
       margin-left: 75px
 
-    .h5__service    
+    .h5__service
       margin-left: 75px
 
     .img__service
@@ -147,7 +144,3 @@
 
     .h5__service
       margin-left: 75px
- 
-
-
-
