@@ -1,7 +1,10 @@
 import Head from "next/head";
+import Services from "../components/Cards/Services";
+import Reviews from "../components/Reviews/Reviews";
 import About from "../components/About/About";
 import Partners from "../components/Partners/Partners";
 import styles from "../styles/Home.module.sass";
+import Call from "../components/Call/Call";
 import MainHead from "../components/MainHead/MainHead";
 
 export default function Home() {
@@ -13,8 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHead />
+<<<<<<< HEAD
       <About/>
       <Partners/>
+=======
+      <Services />
+      <About />
+      <Partners />
+      <Reviews />
+      <Call />
+>>>>>>> 223918b8049a2af34f96d1f64c7c6c050db9983f
     </div>
   );
 }
