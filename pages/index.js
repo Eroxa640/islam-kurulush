@@ -16,11 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHead />
+<<<<<<< HEAD
+      <About/>
+      <Partners/>
+=======
       <Services />
       <About />
       <Partners />
       <Reviews />
       <Call />
+>>>>>>> 223918b8049a2af34f96d1f64c7c6c050db9983f
     </div>
   );
 }
