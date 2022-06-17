@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Partners.module.sass";
+import React from 'react'
+import styles from './Partners.module.sass'
 
 function Partners() {
   return (
@@ -10,22 +10,19 @@ function Partners() {
           <div className={styles.partner}>
             <h1 className={styles.work}>С нами работает</h1>
             <div className={styles.top}>
-              <img src="images/euroasia-logo.png" alt="" />
+              <img className={styles.euroasia__logo} src="images/euroasia-logo.png" alt="" />
             </div>
           </div>
           <div className={styles.partner__about}>
-            <p className={styles.parag}>
-              Компания "Eurasia Kyrgyzstan" скупкой недвижимости.
-            </p>
-            <p className={styles.parag2}>
-              4 года скупают и продают высококачественные квартиры. Опыт в этой
-              сфере очень велик Можете обращаться по адресу номеру
+            <p className={styles.parag}>Компания "Eurasia Kyrgyzstan" скупкой недвижимости.</p>
+            <p className={styles.parag2}>4 года скупают и продают высококачественные квартиры. Опыт в этой сфере очень велик
+Можете обращаться по адресу номеру:  <a href='#' className={styles.partner__number}>996 (700) 556 030</a>
             </p>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Partners;
+export default Partners
