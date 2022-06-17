@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;200;300;400;700&display=swap')
 .container
-  max-height: 4660
+  max-width: calc( 100% - 150px )
+  margin: 0 auto
+.bg
+  max-width: 100%
   background: #EBEBEB
+.erbol
+  max-width: 1110px
+  margin: 0 auto
 
 .h5__service
-  font-family: Monsterat, sans-serif
+  font-family: "Montserrat", sans-serif
   color: #BDBDBD
   font-size: 24px
-  margin-left: 130px
-  padding-bottom: 30px
-  padding-top: 20px
+  padding-top: 15px
 
 .h1__service
-  font-family: Merriweather, sans-serif
+  font-family: "Merriweather", sans-serif
   color: #333333
   font-weight: 900px
   font-size: 48px
@@ -29,6 +31,18 @@
   position: relative
   width: 350px
   height: 365px
+  border-radius: 10px
+  z-index: -1
+
+.h2__service
+  font-family: "Montserrat", sans-serif
+  font-size: 20px
+  color: #FFFFFF
+  position: absolute
+  top: 300px
+  left: 30px
+  width: 300px
+  transition: .4s
 
 .card
   position: relative
@@ -51,7 +65,7 @@
   padding-bottom: 200px
   margin: 0 auto
 
-@media screen and (min-width:1920px)
+@media screen and (max-width: 1265px)
   .container
     max-height: 4460
     background: #EBEBEB
@@ -112,13 +126,15 @@
     width: 300px
 
   .cards
-    display: grid
-    grid-template-columns: repeat(3, 0fr)
-    gap: 30px
-    padding-left: 130px
-    padding-bottom: 200px
-    margin-left: 300px
-
+    max-width: 760px
+    grid-template-columns: repeat(2, 2fr)
+    margin: 50px auto
+@media screen and (max-width: 800px)
+  .cards
+    grid-template-columns: repeat(1, 4fr)
+    max-width: 350px
+    margin: 50px auto
+@media screen and (max-width: 635px)
   .h1__service
     font-size: 34px
 
