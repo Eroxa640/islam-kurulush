@@ -16,7 +16,7 @@ function Partners() {
           <div className={styles.partner__about}>
             <p className={styles.parag}>Компания "Eurasia Kyrgyzstan" скупкой недвижимости.</p>
             <p className={styles.parag2}>4 года скупают и продают высококачественные квартиры. Опыт в этой сфере очень велик
-Можете обращаться по адресу номеру 
+Можете обращаться по адресу номеру:  <a href='#' className={styles.partner__number}>996 (700) 556 030</a>
             </p>
           </div>
         </div>
