@@ -5,8 +5,10 @@
   margin: 0 auto
 
 .reviews_container
-  max-width: 1110px
-  margin: 0 auto
+  width: 1110px
+  margin: 140px auto 130px
+  padding: 0 0 100px
+  overflow: hidden
 
 .reviews_title
   font-family: 'Lato', sans-serif
@@ -18,17 +20,29 @@
 
 .reviews_thanks
   font-family: 'Merriweather'
-  font-style: normal
+  font-style: normals
   font-weight: 900
   font-size: 48px
   line-height: 69px
   color: #333333
-  margin-top: 40px
+  margin-top: 40pxs
+
+.swiperPaginationHorizontal
+  left: calc( 50% - 80px)
+  bottom: -100px
+  width: 160px
+  display: flex
+  align-items: center
+  justify-content: center
+  span
+    margin-right: 40px
+    &:last-child
+      margin-right: 0px
 
 .grey_block
   max-width: 1110px
   background: #EBEBEB
-  margin-top: 80px
+  position: relative
 
 .grey_description
   font-family: "Montserrat"
@@ -52,7 +66,7 @@
   margin-left: 35px
 
 .photo_h3
-  font-family: 'Montserrat'
+  font-family: 'Montserrat', sans-serif
   font-style: normal
   font-weight: 700
   font-size: 18px
@@ -60,7 +74,7 @@
   color: #000000
 
 .photo_h5
-  font-family: 'Montserrat'
+  font-family: 'Montserrat', sans-serif
   font-style: normal
   font-weight: 300
   font-size: 14px
@@ -68,4 +82,15 @@
   margin-top: 10px
   color: #4F4F4F
 
+.customNav
+  background-color: red
+// .swiperCustomNext
+//   width: 100px
+//   display: block
+
+// .swiperCustomPrev
+//   width: 100px
+//   display: block
+// .customNav
+//   top: 100%
 @media screen and (max-width: 1024px)
