@@ -4,7 +4,9 @@ import styles from "./Call.module.sass";
 export default function Call() {
   return (
     <div className={styles.call}>
-      <img className={styles.call_bg} src="images/call_bg.png" alt="phone" />
+      <div className={styles.image}>
+        <img className={styles.call_bg} src="images/call_bg.png" alt="phone" />
+      </div>
       <div className={styles.call_container}>
         <div className={styles.call_desc}>
           <div className={styles.call_left}>
