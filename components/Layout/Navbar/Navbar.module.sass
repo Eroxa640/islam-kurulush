@@ -75,7 +75,7 @@
     transform: translateY(100%) translateX(100%)
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-around
     align-items: flex-start
     background-color: #fff
     transition: .3s
@@ -95,10 +95,15 @@
     display: flex
     align-items: flex-start
   .nav__link
-    margin: 0
+    margin: 7px 0
   .contact__imgIcon
-    width: 17px
-    max-height: 20px
+    width: 15px
+    max-height: 17px
     height: auto
     object-fit: contain
-    margin: 0 15px 0 0
+    margin: 0 10px 0 0
+  .navContact
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    gap: 15px

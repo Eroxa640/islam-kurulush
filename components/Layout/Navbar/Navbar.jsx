@@ -36,7 +36,7 @@ export default function Navbar() {
             [styles.navListVisible]: isOpen,
           })}
         >
-          <nav className={styles.navItem}>
+          <nav className={`${styles.navItem} ${styles.navContact}`}>
             {contact.map(({ title, link, id }) => {
               return (
                 <span key={id} className={styles.contact}>

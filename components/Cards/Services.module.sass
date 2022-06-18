@@ -1,22 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;200;300;400;700&display=swap')
 .container
-  max-width: 1300px
+  max-width: 1115px
   margin: 0 auto
-  padding: 50px 0 
-.bg
+  padding: 50px 0
+.cards__container
   max-width: 100%
   background: #EBEBEB
-.card__image
-  width: 100%
-  height: 100%
 .flex
-  max-width: calc( 100% - 150px )
-  margin: 0 auto
+  width: 100%
+//   margin: 0 auto
 .card
+  position: relative
+  width: 100%
+  display: flex
+  justify-content: center
+.card__bg
   max-width: 355px
   position: relative
+.card__image
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+.card__title
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 22px
+  line-height: 30px
+  color: #f1f1f1
+  position: absolute
+  left: 35px
+  bottom: 0
+  transform: translateY(100%)
+.card__bg
+
 .cards
   display: grid
+  width: 100%
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr))
   gap: 20px
   margin-top: 50px
@@ -34,20 +55,13 @@
   font-size: 24px
   line-height: 33px
   color: #BDBDBD
-.card__title
-  font-family: 'Montserrat', sans-serif
-  font-style: normal
-  font-weight: 700
-  font-size: 22px
-  line-height: 30px
-  color: #f1f1f1
-  position: absolute
-  left: 10px
-  bottom: 10px
 @media screen and (max-width: 1255px)
   .cards
     max-width: 730px
     margin: 50px auto
+  .about
+    max-width: 730px
+    margin: 0 auto
 @media screen and (max-width: 900px)
   .flex
     max-width: calc( 100% - 100px )
