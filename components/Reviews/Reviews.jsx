@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Reviews.module.sass";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -26,54 +26,70 @@ export default function Reviews() {
           modules={[Pagination, Navigation]}
         >
           <SwiperSlide className={styles.grey_block}>
-            <h2 className={styles.grey_description}>
-              Спасибо вам за качествунную квартиру. Живем более 3х лет на
-              квартире которая построила компания "Ислам Курулуш"{" "}
-            </h2>
-            <div className={styles.photo_block}>
-              <img src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
-              <div className={styles.photo_description}>
-                <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
-                <h5 className={styles.photo_h5}>Домохозяйка</h5>
+            <div className={styles.review__info}>
+              <h2 className={styles.grey_description}>
+                Спасибо вам за качествунную квартиру. Живем более 3х лет на
+                квартире которая построила компания "Ислам Курулуш"{" "}
+              </h2>
+              <div className={styles.photo_block}>
+                <div className={styles.image}>
+                  <img className={styles.img} src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
+                </div>
+                <div className={styles.photo_description}>
+                  <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
+                  <h5 className={styles.photo_h5}>Домохозяйка</h5>
+                </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className={styles.grey_block}>
-            <h2 className={styles.grey_description}>
-              Спасибо вам за качествунную квартиру. Живем более 3х лет на
-              квартире которая построила компания "Ислам Курулуш"{" "}
-            </h2>
-            <div className={styles.photo_block}>
-              <img src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
-              <div className={styles.photo_description}>
-                <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
-                <h5 className={styles.photo_h5}>Домохозяйка</h5>
+            <div className={styles.review__info}>
+              <h2 className={styles.grey_description}>
+                Спасибо вам за качествунную квартиру. Живем более 3х лет на
+                квартире которая построила компания "Ислам Курулуш"{" "}
+              </h2>
+              <div className={styles.photo_block}>
+                <div className={styles.image}>
+                  <img className={styles.img} src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
+                </div>
+                <div className={styles.photo_description}>
+                  <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
+                  <h5 className={styles.photo_h5}>Домохозяйка</h5>
+                </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className={styles.grey_block}>
-            <h2 className={styles.grey_description}>
-              Спасибо вам за качествунную квартиру. Живем более 3х лет на
-              квартире которая построила компания "Ислам Курулуш"{" "}
-            </h2>
-            <div className={styles.photo_block}>
-              <img src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
-              <div className={styles.photo_description}>
-                <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
-                <h5 className={styles.photo_h5}>Домохозяйка</h5>
+            <div className={styles.review__info}>
+              <h2 className={styles.grey_description}>
+                Спасибо вам за качествунную квартиру. Живем более 3х лет на
+                квартире которая построила компания "Ислам Курулуш"{" "}
+              </h2>
+              <div className={styles.photo_block}>
+                <div className={styles.image}>
+                  <img className={styles.img} src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
+                </div>
+                <div className={styles.photo_description}>
+                  <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
+                  <h5 className={styles.photo_h5}>Домохозяйка</h5>
+                </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide className={styles.grey_block}>
-            <h2 className={styles.grey_description}>
-              Спасибо вам за качествунную квартиру. Живем более 3х лет на
-              квартире которая построила компания "Ислам Курулуш"{" "}
-            </h2>
-            <div className={styles.photo_block}>
-              <img src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
-              <div className={styles.photo_description}>
-                <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
-                <h5 className={styles.photo_h5}>Домохозяйка</h5>
+            <div className={styles.review__info}>
+              <h2 className={styles.grey_description}>
+                Спасибо вам за качествунную квартиру. Живем более 3х лет на
+                квартире которая построила компания "Ислам Курулуш"{" "}
+              </h2>
+              <div className={styles.photo_block}>
+                <div className={styles.image}>
+                  <img className={styles.img} src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
+                </div>
+                <div className={styles.photo_description}>
+                  <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
+                  <h5 className={styles.photo_h5}>Домохозяйка</h5>
+                </div>
               </div>
             </div>
           </SwiperSlide>

@@ -17,11 +17,15 @@ export default function Call() {
             </h4>
             <div className={styles.left_desc}>
               <div className={styles.call_phone}>
-                <img src="images/phone.svg" alt="phone" />
+                <div className={styles.phone__icon}>
+                  <img className={styles.phone__img} src="images/phone.svg" alt="phone" />
+                </div>
                 <p>+996 (700) 556 030</p>
               </div>
               <div className={styles.call_email}>
-                <img src="images/email.svg" alt="phone" />
+                <div className={styles.email__icon}>
+                  <img className={styles.phone__img} src="images/email.svg" alt="phone" />
+                </div>
                 <p>islam-kurulush.kg</p>
               </div>
             </div>
