@@ -8,7 +8,7 @@ export default function Call() {
         <img className={styles.call_bg} src="images/call_bg.png" alt="phone" />
       </div>
       <div className={styles.call_container}>
-        <div className={styles.call_desc}>
+        <form className={styles.call_desc}>
           <div className={styles.call_left}>
             <h2>Связь с нами</h2>
             <h4>
@@ -34,11 +34,11 @@ export default function Call() {
             <div className={styles.top_input}>
               <div className={styles.first_input}>
                 <span>Имя</span>
-                <input placeholder="Азамат" />
+                <input placeholder="Имя" />
               </div>
               <div className={styles.second_input}>
-                <span>Фамилия</span>
-                <input placeholder="Дуйшенкулов" />
+                <span>Номер телефона</span>
+                <input type='phone' placeholder="+996 123 456" />
               </div>
             </div>
             <div className={`${styles.first_input} ${styles.bottom_input}`}>
@@ -47,7 +47,7 @@ export default function Call() {
             </div>
             <button className={styles.submit}>Отправить сообщение</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
