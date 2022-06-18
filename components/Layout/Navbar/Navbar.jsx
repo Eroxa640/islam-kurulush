@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.sass";
 import Image from "next/image";
-import Logo from "./mainLogo.png";
+import Logo from "./mainLogo.svg";
 import nav from "../../../data/nav";
 import contact from "../../../data/contact";
 import Link from "next/link";
