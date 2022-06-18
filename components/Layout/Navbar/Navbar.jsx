@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.sass";
 import Image from "next/image";
 import Logo from "./mainLogo.png";
 import nav from "../../../data/nav";
 import contact from "../../../data/contact";
 import Link from "next/link";
+import { Slant as Hamburger } from "hamburger-react";
+import cn from "classnames";
 
 export default function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+  // useEffect(() => {
+  //   let elHeight = document.getElementById("container").clientHeight;
+  //   console.log(elHeight);
+  // }, []);
   return (
     <header className={styles.navbar}>
-      <div className={styles.container}>
+      <div id="container" className={styles.container}>
         <div className={styles.logoItem}>
           <Image
             src={Logo}
@@ -17,7 +24,11 @@ export default function Navbar() {
             className={styles.logo__image}
           />
         </div>
-        <div className={styles.navList}>
+        <div
+          className={cn(styles.navList, {
+            [styles.navListVisible]: isOpen,
+          })}
+        >
           <nav className={styles.navItem}>
             {contact.map(({ title, link, id }) => {
               return (
@@ -41,6 +52,15 @@ export default function Navbar() {
               );
             })}
           </nav>
+        </div>
+        <div className={styles.hamburger}>
+          <Hamburger
+            color="rgba(12,64,131,1)"
+            size={30}
+            toggled={isOpen}
+            toggle={setOpen}
+            onToggle={(setOpen) => !setOpen}
+          />
         </div>
       </div>
     </header>
