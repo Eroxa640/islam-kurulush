@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import styles from "./Reviews.module.sass";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import axios from '../../api/axios'
+import axios from "../../api/axios.base";
 import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 
 export default function Reviews() {
-  const [reviews, setReviews] = useState([])
+  const [reviews, setReviews] = useState([]);
   useEffect(() => {
     const getReviews = async () => {
       try {
