@@ -58,6 +58,11 @@
   .navbar
     position: relative
     z-index: 100px
+  .container
+    height: 90px
+  .logoItem
+    max-width: 80px
+    max-height: 80px
   .navList
     border-top: 2px solid #605d5d49
     z-index: -99
@@ -65,7 +70,7 @@
     padding: 0 50px
     bottom: 0
     right: 0
-    width: 400px
+    width: 100%
     height: calc( 100vh - 110px )
     transform: translateY(100%) translateX(100%)
     display: flex
@@ -76,6 +81,7 @@
     transition: .3s
   .navList.navListVisible
     transform: translateY(100%) translateX(0)
+    overflow-y: scroll
   .navItem
     display: flex
     flex-direction: column

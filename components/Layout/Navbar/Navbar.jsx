@@ -10,6 +10,11 @@ import cn from "classnames";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    }
+  }, [isOpen]);
   // useEffect(() => {
   //   let elHeight = document.getElementById("container").clientHeight;
   //   console.log(elHeight);
