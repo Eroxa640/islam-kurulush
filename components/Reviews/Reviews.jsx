@@ -42,7 +42,7 @@ export default function Reviews() {
           className="slider"
           modules={[Pagination, Navigation]}
         >
-          {/* {reviews.map(item => {
+          {/* {reviews.map((item) => {
             return (
               <SwiperSlide className={styles.grey_block}>
                 <div className={styles.review__info}>
@@ -52,7 +52,11 @@ export default function Reviews() {
                   </h2>
                   <div className={styles.photo_block}>
                     <div className={styles.image}>
-                      <img className={styles.img} src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
+                      <img
+                        className={styles.img}
+                        src="images/Gulmira-Asanova.png"
+                        alt="Гульмира Асанова"
+                      />
                     </div>
                     <div className={styles.photo_description}>
                       <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
@@ -61,7 +65,7 @@ export default function Reviews() {
                   </div>
                 </div>
               </SwiperSlide>
-            )
+            );
           })} */}
           {/* <SwiperSlide className={styles.grey_block}>
             <div className={styles.review__info}>
