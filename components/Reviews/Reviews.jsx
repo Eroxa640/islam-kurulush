@@ -12,7 +12,7 @@ export default function Reviews() {
   useEffect(() => {
     const getReviews = async () => {
       try {
-        const res = await axios.get(`/reviews`);
+        const res = await axios.get(`/reviews?populate=image`);
         if (!res.data) {
           throw new Error();
         }
@@ -22,8 +22,8 @@ export default function Reviews() {
       }
     };
     getReviews();
-    console.log(reviews);
   }, []);
+  console.log(reviews);
   return (
     <div className={styles.reviews}>
       <div className={styles.reviews_container}>
@@ -42,27 +42,26 @@ export default function Reviews() {
           className="slider"
           modules={[Pagination, Navigation]}
         >
-          {/* {reviews.map(item => {
+          {reviews.map(item => {
             return (
-              <SwiperSlide className={styles.grey_block}>
+              <SwiperSlide key={item.id} className={styles.grey_block}>
                 <div className={styles.review__info}>
                   <h2 className={styles.grey_description}>
-                    Спасибо вам за качествунную квартиру. Живем более 3х лет на
-                    квартире которая построила компания "Ислам Курулуш"{" "}
+                    {item.description}
                   </h2>
                   <div className={styles.photo_block}>
                     <div className={styles.image}>
-                      <img className={styles.img} src="images/Gulmira-Asanova.png" alt="Гульмира Асанова" />
+                      <img className={styles.img} src={item.image.formats.large.url} alt="Гульмира Асанова" />
                     </div>
                     <div className={styles.photo_description}>
-                      <h3 className={styles.photo_h3}>Гульмира Асанова</h3>
-                      <h5 className={styles.photo_h5}>Домохозяйка</h5>
+                      <h3 className={styles.photo_h3}>{item.FIO}</h3>
+                      <h5 className={styles.photo_h5}>{item.proffesion}</h5>
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
             )
-          })} */}
+          })}
           {/* <SwiperSlide className={styles.grey_block}>
             <div className={styles.review__info}>
               <h2 className={styles.grey_description}>

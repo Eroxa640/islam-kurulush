@@ -1,14 +1,46 @@
-import React from "react";
+import axios from "../../api/axios.base";
+import React, { useEffect, useState } from "react";
 import styles from "./Call.module.sass";
 
 export default function Call() {
+  const [message, setMessage] = useState({
+    name: "",
+    message: "",
+    phone: "",
+  })
+
+  const onChange = (e) => {
+    setMessage((value) => {
+      return {
+        ...value,
+        [e.target.name]: e.target.value
+      }
+    })
+  }
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    const postCall = async () => {
+      try {
+        const res = await axios.post(`/obratnaya-svyazs`, {data: message});
+        if (!res.data) {
+          throw new Error();
+        }
+        setMessage(true)
+        alert('Ваше сообщение отправлено')
+      } catch (error) {
+        setMessage(false);
+      }
+    };
+    postCall();
+  }
   return (
     <div className={styles.call}>
       <div className={styles.image}>
         <img className={styles.call_bg} src="images/call_bg.png" alt="phone" />
       </div>
       <div className={styles.call_container}>
-        <form className={styles.call_desc}>
+        <div className={styles.call_desc}>
           <div className={styles.call_left}>
             <h2>Связь с нами</h2>
             <h4>
@@ -30,24 +62,24 @@ export default function Call() {
               </div>
             </div>
           </div>
-          <div className={styles.call_right}>
+          <form onSubmit={onSubmit} className={styles.call_right}>
             <div className={styles.top_input}>
               <div className={styles.first_input}>
                 <span>Имя</span>
-                <input placeholder="Имя" />
+                <input name="name" onChange={onChange} placeholder="Имя" />
               </div>
               <div className={styles.second_input}>
                 <span>Номер телефона</span>
-                <input type='phone' placeholder="+996 123 456" />
+                <input name="phone" onChange={onChange} type='phone' placeholder="+996 123 456" />
               </div>
             </div>
             <div className={`${styles.first_input} ${styles.bottom_input}`}>
               <span>Сообщение</span>
-              <input placeholder="Ваше сообщение" />
+              <input name="message" onChange={onChange} placeholder="Ваше сообщение" />
             </div>
             <button className={styles.submit}>Отправить сообщение</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );
