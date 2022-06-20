@@ -18,12 +18,11 @@ export default function Reviews() {
         }
         setReviews(res.data.data);
       } catch (error) {
-        setReviews(false);
+        setReviews([]);
       }
     };
     getReviews();
   }, []);
-  console.log(reviews);
   return (
     <div className={styles.reviews}>
       <div className={styles.reviews_container}>
@@ -42,7 +41,7 @@ export default function Reviews() {
           className="slider"
           modules={[Pagination, Navigation]}
         >
-          {reviews.map(item => {
+          {reviews?.map(item => {
             return (
               <SwiperSlide key={item.id} className={styles.grey_block}>
                 <div className={styles.review__info}>
