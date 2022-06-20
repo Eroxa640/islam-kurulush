@@ -17,10 +17,6 @@ export default function Navbar() {
       document.body.style.overflow = "visible";
     }
   }, [isOpen]);
-  // useEffect(() => {
-  //   let elHeight = document.getElementById("container").clientHeight;
-  //   console.log(elHeight);
-  // }, []);
   return (
     <header className={styles.navbar}>
       <div id="container" className={styles.container}>
