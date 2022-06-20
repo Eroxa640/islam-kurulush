@@ -1,6 +1,6 @@
 import React from "react";
 import Call from "../../components/Call/Call.jsx";
-import styles from "./index.module.sass";
+import styles from "../../styles/About.module.sass";
 
 export default function About() {
   return (
