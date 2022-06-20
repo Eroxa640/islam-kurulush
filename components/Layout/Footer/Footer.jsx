@@ -6,8 +6,8 @@ export default function Footer() {
     <header className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <span className={styles.AllRights}>2022 Все права защищены КР</span>
-          <span className={styles.madeBy}>Разработано: Calipso</span>
+          <div className={styles.AllRights}>2022 Все права защищены КР</div>
+          <div className={styles.madeBy}>Разработано: Calipso</div>
         </div>
       </div>
     </header>
