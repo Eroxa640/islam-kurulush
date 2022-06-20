@@ -53,7 +53,7 @@ export default function Reviews() {
                       <img
                         className={styles.img}
                         src={item.image.formats.large.url}
-                        alt="Гульмира Асанова"
+                        alt={item.FIO}
                       />
                     </div>
                     <div className={styles.photo_description}>
