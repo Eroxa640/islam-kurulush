@@ -18,11 +18,12 @@ export default function Reviews() {
         }
         setReviews(res.data.data);
       } catch (error) {
-        setReviews([]);
+        setReviews(false);
       }
     };
     getReviews();
   }, []);
+  console.log(reviews);
   return (
     <div className={styles.reviews}>
       <div className={styles.reviews_container}>
