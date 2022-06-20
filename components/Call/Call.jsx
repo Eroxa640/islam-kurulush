@@ -7,33 +7,33 @@ export default function Call({margin}) {
     name: "",
     message: "",
     phone: "",
-  })
+  });
 
   const onChange = (e) => {
     setMessage((value) => {
       return {
         ...value,
-        [e.target.name]: e.target.value
-      }
-    })
-  }
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
 
   const onSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const postCall = async () => {
       try {
-        const res = await axios.post(`/obratnaya-svyazs`, {data: message});
+        const res = await axios.post(`/obratnaya-svyazs`, { data: message });
         if (!res.data) {
           throw new Error();
         }
-        setMessage(true)
-        alert('Ваше сообщение отправлено')
+        setMessage(true);
+        alert("Ваше сообщение отправлено");
       } catch (error) {
         setMessage(false);
       }
     };
     postCall();
-  }
+  };
   return (
     <div style={{margin: margin + 'px auto 0'}} className={styles.call}>
       <div className={styles.image}>
@@ -50,13 +50,21 @@ export default function Call({margin}) {
             <div className={styles.left_desc}>
               <div className={styles.call_phone}>
                 <div className={styles.phone__icon}>
-                  <img className={styles.phone__img} src="images/phone.svg" alt="phone" />
+                  <img
+                    className={styles.phone__img}
+                    src="images/phone.svg"
+                    alt="phone"
+                  />
                 </div>
                 <p>+996 (700) 556 030</p>
               </div>
               <div className={styles.call_email}>
                 <div className={styles.email__icon}>
-                  <img className={styles.phone__img} src="images/email.svg" alt="phone" />
+                  <img
+                    className={styles.phone__img}
+                    src="images/email.svg"
+                    alt="phone"
+                  />
                 </div>
                 <p>islam-kurulush.kg</p>
               </div>
@@ -70,12 +78,21 @@ export default function Call({margin}) {
               </div>
               <div className={styles.second_input}>
                 <span>Номер телефона</span>
-                <input name="phone" onChange={onChange} type='phone' placeholder="+996 123 456" />
+                <input
+                  name="phone"
+                  onChange={onChange}
+                  type="phone"
+                  placeholder="+996 123 456"
+                />
               </div>
             </div>
             <div className={`${styles.first_input} ${styles.bottom_input}`}>
               <span>Сообщение</span>
-              <input name="message" onChange={onChange} placeholder="Ваше сообщение" />
+              <input
+                name="message"
+                onChange={onChange}
+                placeholder="Ваше сообщение"
+              />
             </div>
             <button className={styles.submit}>Отправить сообщение</button>
           </form>
