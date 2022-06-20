@@ -22,6 +22,7 @@
 .review__info
   margin: 61px auto
   padding: 0 95px 0 95px
+  min-height: 190px
 
 .reviews_thanks
   font-family: 'Merriweather'
@@ -87,8 +88,11 @@
 .customNav
   background-color: red
 .image
-  max-width: 80px
+  width: 80px
+  height: 80px
+  object-fit: cover
 .img
+  border-radius: 50%
   width: 100%
   height: 100%
 
@@ -106,6 +110,8 @@
   .reviews__info
     max-width: 500px
 @media screen and (max-width: 780px)
+  .photo_description
+    margin-left: 25px
   .reviews_thanks
     font-size: 30px
     margin-top: 18px
@@ -114,6 +120,7 @@
 @media screen and (max-width: 650px)
   .image
     max-width: 45px
+    height: 45px
   .photo_h5
     margin-top: 0
   .grey_block
@@ -126,3 +133,7 @@
 @media screen and (max-width: 420px)
   .reviews_container
     max-width: calc( 100% - 50px )
+
+@media screen and (max-width: 500px)
+  .photo_h3
+    font-size: 15px
