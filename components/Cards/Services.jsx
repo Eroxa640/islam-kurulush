@@ -3,8 +3,8 @@ import styles from "./Services.module.sass";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/effect-cube";
-import { EffectCube, Pagination } from "swiper";
+import "swiper/css/effect-cards";
+import { EffectCards, Pagination } from "swiper";
 
 export default function Services() {
   const [screenWidth, setScreenWidth] = useState(false);
@@ -34,8 +34,8 @@ export default function Services() {
               pagination={{
                 clickable: true,
               }}
-              effect={"cube"}
-              modules={[Pagination, EffectCube]}
+              effect={"cards"}
+              modules={[Pagination, EffectCards]}
               className={styles.cards}
             >
               <SwiperSlide className={styles.card__bg}>
