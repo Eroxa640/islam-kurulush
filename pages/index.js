@@ -20,7 +20,7 @@ export default function Home() {
       <About />
       <Partners />
       <Reviews />
-      <Call />
+      <Call margin={130} />
     </div>
   );
 }

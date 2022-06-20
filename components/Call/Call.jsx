@@ -2,7 +2,7 @@ import axios from "../../api/axios.base";
 import React, { useEffect, useState } from "react";
 import styles from "./Call.module.sass";
 
-export default function Call() {
+export default function Call({margin}) {
   const [message, setMessage] = useState({
     name: "",
     message: "",
@@ -35,7 +35,7 @@ export default function Call() {
     postCall();
   };
   return (
-    <div className={styles.call}>
+    <div style={{margin: margin + 'px auto 0'}} className={styles.call}>
       <div className={styles.image}>
         <img className={styles.call_bg} src="images/call_bg.png" alt="phone" />
       </div>
