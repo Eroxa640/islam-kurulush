@@ -33,7 +33,20 @@ export default function Call({ margin }) {
     };
     postCall();
   };
-
+  const [screenWidth, setScreenWidth] = useState(false);
+  const handleWidth = () => {
+    const screenWidth = window.screen.width;
+    if (screenWidth <= 500) {
+      setScreenWidth(true);
+    } else {
+      setScreenWidth(false);
+    }
+  };
+  useEffect(() => {
+    handleWidth();
+    window.addEventListener("resize", handleWidth);
+    return () => window.removeEventListener("resize", handleWidth);
+  }, []);
   //motion
   let firstVar = {
     hidden: {
@@ -157,43 +170,73 @@ export default function Call({ margin }) {
               </motion.div>
             </div>
           </div>
-          <motion.form
-            onSubmit={onSubmit}
-            className={styles.call_right}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{
-              once: true,
-              amount: 1,
-            }}
-            variants={secondVar}
-            custom={1}
-          >
-            <div className={styles.top_input}>
-              <div className={styles.first_input}>
-                <span>Имя</span>
-                <input name="name" onChange={onChange} placeholder="Имя" />
+
+          {screenWidth ? (
+            <form onSubmit={onSubmit} className={styles.call_right}>
+              <div className={styles.top_input}>
+                <div className={styles.first_input}>
+                  <span>Имя</span>
+                  <input name="name" onChange={onChange} placeholder="Имя" />
+                </div>
+                <div className={styles.second_input}>
+                  <span>Номер телефона</span>
+                  <input
+                    name="phone"
+                    onChange={onChange}
+                    type="phone"
+                    placeholder="+996 123 456"
+                  />
+                </div>
               </div>
-              <div className={styles.second_input}>
-                <span>Номер телефона</span>
+              <div className={`${styles.first_input} ${styles.bottom_input}`}>
+                <span>Сообщение</span>
                 <input
-                  name="phone"
+                  name="message"
                   onChange={onChange}
-                  type="phone"
-                  placeholder="+996 123 456"
+                  placeholder="Ваше сообщение"
                 />
               </div>
-            </div>
-            <div className={`${styles.first_input} ${styles.bottom_input}`}>
-              <span>Сообщение</span>
-              <input
-                name="message"
-                onChange={onChange}
-                placeholder="Ваше сообщение"
-              />
-            </div>
-            <button className={styles.submit}>Отправить сообщение</button>
-          </motion.form>
+              <button className={styles.submit}>Отправить сообщение</button>
+            </form>
+          ) : (
+            <motion.form
+              onSubmit={onSubmit}
+              className={styles.call_right}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{
+                once: true,
+                amount: 1,
+              }}
+              variants={secondVar}
+              custom={1}
+            >
+              <div className={styles.top_input}>
+                <div className={styles.first_input}>
+                  <span>Имя</span>
+                  <input name="name" onChange={onChange} placeholder="Имя" />
+                </div>
+                <div className={styles.second_input}>
+                  <span>Номер телефона</span>
+                  <input
+                    name="phone"
+                    onChange={onChange}
+                    type="phone"
+                    placeholder="+996 123 456"
+                  />
+                </div>
+              </div>
+              <div className={`${styles.first_input} ${styles.bottom_input}`}>
+                <span>Сообщение</span>
+                <input
+                  name="message"
+                  onChange={onChange}
+                  placeholder="Ваше сообщение"
+                />
+              </div>
+              <button className={styles.submit}>Отправить сообщение</button>
+            </motion.form>
+          )}
         </div>
       </div>
     </div>

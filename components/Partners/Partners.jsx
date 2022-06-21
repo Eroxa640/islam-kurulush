@@ -6,21 +6,7 @@ function Partners() {
   //motion
   let firstVar = {
     hidden: {
-      x: -20,
-      opacity: 0,
-    },
-    visible: (num) => ({
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: num * 0.1,
-      },
-    }),
-  };
-  let secondVar = {
-    hidden: {
-      x: 40,
+      x: -5,
       opacity: 0,
     },
     visible: (num) => ({
@@ -35,9 +21,11 @@ function Partners() {
   let hiddenVar = {
     hidden: {
       opacity: 0,
+      scale: 0.8,
     },
     visible: (num) => ({
       opacity: 1,
+      scale: 1,
       transition: {
         duration: 0.3,
         delay: num * 0.1,
@@ -101,7 +89,7 @@ function Partners() {
               once: true,
               amount: 1,
             }}
-            variants={secondVar}
+            variants={hiddenVar}
             custom={1}
           >
             <p className={styles.parag}>
