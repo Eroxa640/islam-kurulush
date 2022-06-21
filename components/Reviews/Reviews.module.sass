@@ -32,7 +32,6 @@
   line-height: 69px
   color: #333333
   margin-top: 40px
-
 .swiperPaginationHorizontal
   left: calc( 50% - 80px)
   bottom: -30px
@@ -59,6 +58,12 @@
   line-height: 25px
   color: #000000
   margin: 0 auto
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 6
+  -webkit-box-orient: vertical
+  word-wrap: break-word
 .photo_block
   max-width: 980px
   display: flex
@@ -119,6 +124,9 @@
   .grey_block
     margin: 42px auto
 @media screen and (max-width: 650px)
+  .review__info
+    padding: 0 20px 0 20px
+    margin: 35px auto 20px
   .image
     max-width: 45px
     height: 45px

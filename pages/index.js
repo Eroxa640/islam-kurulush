@@ -6,8 +6,23 @@ import Partners from "../components/Partners/Partners";
 import styles from "../styles/Home.module.sass";
 import Call from "../components/Call/Call";
 import MainHead from "../components/MainHead/MainHead";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [screenWidth, setScreenWidth] = useState(130);
+  const handleWidth = () => {
+    const screenWidth = window.screen.width;
+    if (screenWidth >= 900) {
+      setScreenWidth(130);
+    } else if (screenWidth <= 900) {
+      setScreenWidth(80);
+    }
+  };
+  useEffect(() => {
+    handleWidth();
+    window.addEventListener("resize", handleWidth);
+    return () => window.removeEventListener("resize", handleWidth);
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
@@ -20,7 +35,7 @@ export default function Home() {
       <About />
       <Partners />
       <Reviews />
-      <Call margin={130} />
+      <Call margin={screenWidth} />
     </div>
   );
 }
