@@ -20,22 +20,18 @@ function About() {
           <div className={styles.deal}>
             <h1 className={styles.deals__number}>200</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
-            <h3 className={styles.deals__case}>Все кейсы</h3>
           </div>
           <div className={styles.deal}>
             <h1 className={styles.deals__number}>200</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
-            <h3 className={styles.deals__case}>Все кейсы</h3>
           </div>
           <div className={styles.deal}>
             <h1 className={styles.deals__number}>5</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
-            <h3 className={styles.deals__case}>Все кейсы</h3>
           </div>
           <div className={styles.deal}>
             <h1 className={styles.deals__number}>5</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
-            <h3 className={styles.deals__case}>Все кейсы</h3>
           </div>
         </div>
       </div>
