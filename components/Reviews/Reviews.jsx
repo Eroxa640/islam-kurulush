@@ -23,7 +23,6 @@ export default function Reviews() {
     };
     getReviews();
   }, []);
-  console.log(reviews);
   return (
     <div className={styles.reviews}>
       <div className={styles.reviews_container}>
