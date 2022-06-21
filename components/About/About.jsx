@@ -108,7 +108,7 @@ function About() {
               amount: 0.3,
             }}
             variants={hiddenVar}
-            custom={2}
+            custom={1}
           >
             <h1 className={styles.deals__number}>200</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
@@ -122,7 +122,7 @@ function About() {
               amount: 0.3,
             }}
             variants={hiddenVar}
-            custom={3}
+            custom={1}
           >
             <h1 className={styles.deals__number}>5</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
@@ -136,7 +136,7 @@ function About() {
               amount: 0.3,
             }}
             variants={hiddenVar}
-            custom={4}
+            custom={1}
           >
             <h1 className={styles.deals__number}>5</h1>
             <h3 className={styles.deals__title}>Завершено крупных сделок</h3>
