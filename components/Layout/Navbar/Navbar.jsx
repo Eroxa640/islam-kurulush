@@ -20,12 +20,14 @@ export default function Navbar() {
   return (
     <header className={styles.navbar}>
       <div id="container" className={styles.container}>
-        <Link href="/" className={styles.logoItem}>
-          <Image
-            src={Logo}
-            alt="Ислам Курулуш"
-            className={styles.logo__image}
-          />
+        <Link href="/">
+          <a className={styles.logoItem}>
+            <Image
+              src={Logo}
+              alt="Ислам Курулуш"
+              className={styles.logo__image}
+            />
+          </a>
         </Link>
         <div
           className={cn(styles.navList, {
