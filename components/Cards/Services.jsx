@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-cards";
-import { EffectCards, Pagination } from "swiper";
-import { motion, AnimatePresence } from "framer-motion";
+import { EffectCards } from "swiper";
+import { motion } from "framer-motion";
 
 export default function Services() {
   const [screenWidth, setScreenWidth] = useState(false);
@@ -86,11 +86,8 @@ export default function Services() {
           </div>
           {screenWidth ? (
             <Swiper
-              pagination={{
-                clickable: true,
-              }}
               effect={"cards"}
-              modules={[Pagination, EffectCards]}
+              modules={[EffectCards]}
               className={styles.cards}
             >
               <SwiperSlide className={styles.card__bg}>
