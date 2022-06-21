@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <header className={styles.navbar}>
       <div id="container" className={styles.container}>
-        <Link href='/' className={styles.logoItem}>
+        <Link href="/" className={styles.logoItem}>
           <Image
             src={Logo}
             alt="Ислам Курулуш"
@@ -35,7 +35,11 @@ export default function Navbar() {
           <nav className={`${styles.navItem} ${styles.navContact}`}>
             {contact.map(({ title, link, id }) => {
               return (
-                <span key={id} className={styles.contact}>
+                <span
+                  key={id}
+                  style={{ fontFamily: "Montserrat" }}
+                  className={styles.contact}
+                >
                   <img
                     className={styles.contact__imgIcon}
                     src={`/images/icons/${link}`}
@@ -50,7 +54,12 @@ export default function Navbar() {
             {nav.map(({ name, link, id }) => {
               return (
                 <Link key={id} href={link}>
-                  <a className={styles.nav__link}>{name}</a>
+                  <a
+                    style={{ fontFamily: "Montserrat" }}
+                    className={styles.nav__link}
+                  >
+                    {name}
+                  </a>
                 </Link>
               );
             })}
