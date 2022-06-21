@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <header className={styles.navbar}>
       <div id="container" className={styles.container}>
-        <Link href='/' className={styles.logoItem}>
+        <Link href="/" className={styles.logoItem}>
           <Image
             src={Logo}
             alt="Ислам Курулуш"
@@ -50,7 +50,12 @@ export default function Navbar() {
             {nav.map(({ name, link, id }) => {
               return (
                 <Link key={id} href={link}>
-                  <a className={styles.nav__link}>{name}</a>
+                  <a
+                    className={styles.nav__link}
+                    onClick={() => setOpen(false)}
+                  >
+                    {name}
+                  </a>
                 </Link>
               );
             })}
