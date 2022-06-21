@@ -35,11 +35,7 @@ export default function Navbar() {
           <nav className={`${styles.navItem} ${styles.navContact}`}>
             {contact.map(({ title, link, id }) => {
               return (
-                <span
-                  key={id}
-                  style={{ fontFamily: "Montserrat" }}
-                  className={styles.contact}
-                >
+                <span key={id} className={styles.contact}>
                   <img
                     className={styles.contact__imgIcon}
                     src={`/images/icons/${link}`}
@@ -55,8 +51,8 @@ export default function Navbar() {
               return (
                 <Link key={id} href={link}>
                   <a
-                    style={{ fontFamily: "Montserrat" }}
                     className={styles.nav__link}
+                    onClick={() => setOpen(false)}
                   >
                     {name}
                   </a>
