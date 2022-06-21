@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function About() {
   //motion
-  let firstTeamVar = {
+  let firstVar = {
     hidden: {
-      x: -40,
+      x: -20,
       opacity: 0,
     },
     visible: (num) => ({
@@ -18,20 +18,20 @@ function About() {
       },
     }),
   };
-  let secondTeamVar = {
-    hidden: {
-      x: 40,
-      opacity: 0,
-    },
-    visible: (num) => ({
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: num * 0.1,
-      },
-    }),
-  };
+  // let secondVar = {
+  //   hidden: {
+  //     x: 40,
+  //     opacity: 0,
+  //   },
+  //   visible: (num) => ({
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.5,
+  //       delay: num * 0.1,
+  //     },
+  //   }),
+  // };
   let hiddenVar = {
     hidden: {
       opacity: 0,
@@ -55,7 +55,7 @@ function About() {
             once: true,
             amount: 0.3,
           }}
-          variants={firstTeamVar}
+          variants={firstVar}
           custom={0}
         >
           <h3 className={styles.about}>О нас</h3>
@@ -71,7 +71,7 @@ function About() {
               once: true,
               amount: 0.3,
             }}
-            variants={firstTeamVar}
+            variants={firstVar}
             custom={1}
           >
             <p className={styles.parag}>

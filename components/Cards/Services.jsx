@@ -26,7 +26,7 @@ export default function Services() {
   //motion
   let firstTeamVar = {
     hidden: {
-      x: -40,
+      x: -20,
       opacity: 0,
     },
     visible: (num) => ({
@@ -40,23 +40,11 @@ export default function Services() {
   };
   let secondTeamVar = {
     hidden: {
-      x: 40,
+      x: 20,
       opacity: 0,
     },
     visible: (num) => ({
       x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: num * 0.1,
-      },
-    }),
-  };
-  let hiddenVar = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: (num) => ({
       opacity: 1,
       transition: {
         duration: 0.5,

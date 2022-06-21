@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function MainHead() {
   let firstTeamVar = {
     hidden: {
-      x: -40,
+      x: -10,
       opacity: 0,
     },
     visible: (num) => ({
@@ -19,7 +19,7 @@ export default function MainHead() {
   };
   let secondTeamVar = {
     hidden: {
-      x: 40,
+      x: 20,
       opacity: 0,
     },
     visible: (num) => ({
