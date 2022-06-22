@@ -35,16 +35,16 @@ export default function Navbar() {
           })}
         >
           <nav className={`${styles.navItem} ${styles.navContact}`}>
-            {contact.map(({ title, link, id }) => {
+            {contact.map(({ title, link, id, url }) => {
               return (
-                <span key={id} className={styles.contact}>
+                <a target="_blank" href={url} key={id} className={styles.contact}>
                   <img
                     className={styles.contact__imgIcon}
                     src={`/images/icons/${link}`}
                     alt={title}
                   />
                   {title}
-                </span>
+                </a>
               );
             })}
           </nav>
