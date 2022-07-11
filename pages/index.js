@@ -27,13 +27,9 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Главная</title>
-        {/* <meta
-          name="description"
-          content="Ислам Курулуш,Ислам Курулуш Компания, Строительная компания"
-        /> */}
         <meta
-          name="google-site-verification"
-          content="fjXGCFInVCCqpj65YZpdttRCH3d1qsRcWlL21WxKzpU"
+          name="description"
+          content="Строительная компания 'Ислам Курулуш'"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
