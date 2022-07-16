@@ -146,7 +146,11 @@ export default function Call({ margin }) {
                     alt="phone"
                   />
                 </div>
-                <p>+996 (700) 556 030</p>
+                <div>
+                  <p>+996 (700) 556 030</p>
+                  <p>+996 (554) 556 030</p>
+                  <p>+996 (774) 556 030</p>
+                </div>
               </motion.div>
               <motion.div
                 className={styles.call_email}

@@ -93,73 +93,61 @@ export default function Services() {
               <SwiperSlide className={styles.card__bg}>
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.card__bg}>
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt=""
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.card__bg}>
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.card__bg}>
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.card__bg}>
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </SwiperSlide>
               <SwiperSlide className={styles.card__bg}>
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -178,13 +166,11 @@ export default function Services() {
               >
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </motion.div>
               <motion.div
@@ -200,13 +186,11 @@ export default function Services() {
               >
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </motion.div>
               <motion.div
@@ -222,13 +206,11 @@ export default function Services() {
               >
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </motion.div>
               <motion.div
@@ -244,13 +226,11 @@ export default function Services() {
               >
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </motion.div>
               <motion.div
@@ -266,13 +246,11 @@ export default function Services() {
               >
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </motion.div>
               <motion.div
@@ -288,13 +266,11 @@ export default function Services() {
               >
                 <img
                   src="images/img-services.png"
-                  alt="Строительстве нового поколения жилых домов"
+                  alt="Жилой комплекс  'Аhmad'"
                   className={styles.card__image}
                 />
                 <div className={styles.titleItem}>
-                  <h3 className={styles.card__title}>
-                    Строительстве нового поколения жилых домов
-                  </h3>
+                  <h3 className={styles.card__title}>Жилой комплекс "Аhmad"</h3>
                 </div>
               </motion.div>
             </div>

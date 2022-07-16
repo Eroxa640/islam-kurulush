@@ -13,13 +13,13 @@ const contact = [
     title: "islam-kurulush.kg",
     link: "email.png",
     id: 7,
-    url: "https://mail.google.com/mail"
+    url: "https://mail.google.com/mail",
   },
   {
-    title: "Мкр Джал-29",
+    title: "Коперника 61",
     link: "location.png",
     id: 8,
-    url: "https://2gis.kg/bishkek/geo/70030076168534524/74.565445%2C42.831655"
+    url: "https://2gis.kg/bishkek/geo/70030076165385067/74.562053%2C42.846135?m=74.562275%2C42.846001%2F19.54%2Fp%2F45",
   },
 ];
 export default contact;
