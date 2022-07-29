@@ -31,6 +31,10 @@ export default function Home() {
           name="description"
           content="Строительная компания 'Ислам Курулуш'"
         />
+        <meta
+          name="keywords"
+          content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры,"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHead />
