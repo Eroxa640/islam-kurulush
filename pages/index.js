@@ -36,6 +36,10 @@ export default function Home() {
           content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры,"
         />
         <meta
+          name="google-site-verification"
+          content="FLObvqR9hln9l2KXxP4JCIdK5dJG7-CMNngQ9jmY67Q"
+        />
+        <meta
           name="robots"
           content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры, Квартиры Бишкек"
         />
