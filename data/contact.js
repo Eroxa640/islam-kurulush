@@ -2,11 +2,13 @@ const contact = [
   {
     title: "+996 (0700) 55 60 30",
     link: "phone.png",
+    url: "",
     id: 5,
   },
   {
     title: "Пн-Пт 10:00-18:00",
     link: "time.png",
+    url: "",
     id: 6,
   },
   {
