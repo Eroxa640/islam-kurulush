@@ -35,6 +35,10 @@ export default function Home() {
           name="keywords"
           content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры,"
         />
+        <meta
+          name="robots"
+          content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры, Квартиры Бишкек"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHead />
