@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Services from "../components/Cards/Services";
+import Services from "../components/Services/Services";
 import Reviews from "../components/Reviews/Reviews";
 import About from "../components/About/About";
 import Partners from "../components/Partners/Partners";
@@ -27,13 +27,14 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Главная</title>
+        <meta name="title" content="Ислам Курулуш - строительная компания" />
         <meta
           name="description"
-          content="Строительная компания 'Ислам Курулуш'"
+          content="Cоздание и мастерство на всех этапах строительных и монтажных работ, внимание к деталям и особым пожелания заказчиков. Умение совмещать несовместимое, находить и нестандартные и эффективные методы решения текущих задач, предлагать лучшие варианты реализации проектов в заданных условиях-умения которое дано не каждому"
         />
         <meta
           name="keywords"
-          content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры,"
+          content="Ислам Курулуш - сторительная компания, Ислам Курулуш строительная компания, квартиры, ислам курулуш, строительная компания, квартиры бишкек"
         />
         <meta
           name="google-site-verification"
@@ -41,7 +42,7 @@ export default function Home() {
         />
         <meta
           name="robots"
-          content="Ислам Курулуш, Ислам Курулуш строительная компания, квартиры, Квартиры Бишкек"
+          content="Ислам Курулуш - сторительная компания, Ислам Курулуш строительная компания, квартиры, Квартиры Бишкекб строительная компания, квартиры бишкек"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
