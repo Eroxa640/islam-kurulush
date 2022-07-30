@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://islam-kurulush.kg/
+
+# Sitemaps
+Sitemap: https://islam-kurulush.kg/sitemap.xml
